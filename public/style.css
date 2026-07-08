@@ -29,3 +29,12 @@ display:flex;
 list-style:none;
 gap:20px;
 }
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:yellow;
+}
