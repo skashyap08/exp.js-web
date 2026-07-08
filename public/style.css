@@ -38,3 +38,12 @@ transition:.3s;
 nav a:hover{
 color:yellow;
 }
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
