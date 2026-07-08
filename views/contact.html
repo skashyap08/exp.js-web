@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | ExpressWeb</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-code"></i> ExpressWeb
+
+        </div>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/services">Services</a></li>
+
+            <li><a href="/contact" class="active">Contact</a></li>
+
+        </ul>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Let's Connect</h1>
+
+            <p>
+
+                Have a project in mind? We'd love to hear from you.
+                Fill out the form below or contact us directly.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="go('/')">
+
+                    Home
+
+                </button>
+
+                <button class="secondary"
+                    onclick="go('/services')">
+
+                    Our Services
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT INFO ================= -->
+
+    <section class="features">
+
+        <h2>Contact Information</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Address</h3>
+
+                <p>
+
+                    123 Tech Park,<br>
+
+                    New Delhi, India
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Phone</h3>
+
+                <p>
+
+                    +91 98765 43210
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>
+
+                    support@expressweb.com
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Working Hours</h3>
+
+                <p>
+
+                    Monday - Saturday<br>
+
+                    9:00 AM - 6:00 PM
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT FORM ================= -->
+
+    <section class="contact-section">
+
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea
+                    rows="6"
+                    placeholder="Write Your Message..."
+                    required></textarea>
+
+            </div>
+
+            <button type="submit">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="services-preview">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+
+                    Do you build responsive websites?
+
+                </h3>
+
+                <p>
+
+                    Yes, every project is fully responsive
+                    for mobile, tablet and desktop.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Which technologies do you use?
+
+                </h3>
+
+                <p>
+
+                    HTML, CSS, JavaScript,
+                    Node.js, Express.js and MongoDB.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Can you deploy websites?
+
+                </h3>
+
+                <p>
+
+                    Yes, we deploy applications on
+                    Render, Railway, Netlify and Vercel.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <h2>
+
+            Ready to Build Something Amazing?
+
+        </h2>
+
+        <p>
+
+            Contact us today and let's turn your ideas into reality.
+
+        </p>
+
+        <button onclick="go('/services')">
+
+            Explore Services
+
+        </button>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>ExpressWeb</h3>
+
+            <p>
+
+                Modern Web Development Solutions
+
+            </p>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-github"></i>
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </div>
+
+            <p>
+
+                © 2026 ExpressWeb. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+
+    <button id="topBtn" onclick="scrollTopPage()">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
