@@ -897,3 +897,510 @@ table td{
     text-align:center;
 
 }
+/*========================================
+            FOOTER
+========================================*/
+
+footer{
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(15px);
+
+    text-align:center;
+
+    padding:50px 8%;
+
+    margin-top:60px;
+
+}
+
+.footer-content h3{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+    color:#d1d5db;
+
+    margin:10px 0;
+
+    line-height:1.8;
+
+}
+
+.copyright{
+
+    margin-top:25px;
+
+    font-size:15px;
+
+    color:#94a3b8;
+
+}
+
+/*========================================
+        SCROLL TO TOP
+========================================*/
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#06b6d4;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+}
+
+#topBtn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*========================================
+        ANIMATIONS
+========================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.hero{
+
+    animation:fadeIn 1s ease;
+
+}
+
+.card{
+
+    animation:zoomIn .8s ease;
+
+}
+
+/*========================================
+        HOVER EFFECTS
+========================================*/
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#38bdf8;
+
+    transition:.4s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+.logo{
+
+    transition:.4s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*========================================
+        CUSTOM SCROLLBAR
+========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38bdf8;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0ea5e9;
+
+}
+
+/*========================================
+        DARK MODE
+========================================*/
+
+body.dark{
+
+    background:#0f172a;
+
+    color:#f8fafc;
+
+}
+
+body.dark nav{
+
+    background:rgba(15,23,42,.95);
+
+}
+
+body.dark .card{
+
+    background:rgba(30,41,59,.9);
+
+}
+
+body.dark .stat{
+
+    background:rgba(30,41,59,.9);
+
+}
+
+body.dark form{
+
+    background:rgba(30,41,59,.9);
+
+}
+
+body.dark footer{
+
+    background:#020617;
+
+}
+
+body.dark input,
+
+body.dark textarea{
+
+    background:#1e293b;
+
+    color:#fff;
+
+}
+
+/*========================================
+        RESPONSIVE
+========================================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:50px;
+
+}
+
+section h2{
+
+    font-size:34px;
+
+}
+
+.cards{
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+    padding:120px 8% 80px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.pricing{
+
+    grid-template-columns:1fr;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.social-icons{
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+section{
+
+    padding:60px 6%;
+
+}
+
+.cta h2{
+
+    font-size:30px;
+
+}
+
+.footer-content h3{
+
+    font-size:26px;
+
+}
+
+}
+
+/*========================================
+        INPUT FOCUS
+========================================*/
+
+input:focus,
+
+textarea:focus{
+
+    border:2px solid #38bdf8;
+
+    box-shadow:0 0 10px rgba(56,189,248,.4);
+
+}
+
+/*========================================
+        BUTTON RIPPLE EFFECT
+========================================*/
+
+button{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+button::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.3);
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.5s;
+
+}
+
+button:hover::before{
+
+    width:350px;
+
+    height:350px;
+
+}
