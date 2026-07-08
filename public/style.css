@@ -4,3 +4,18 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
+body{
+background:linear-gradient(135deg,#4f46e5,#06b6d4);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
