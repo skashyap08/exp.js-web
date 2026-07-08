@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Company</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-code"></i> ExpressWeb
+        </div>
+
+        <ul>
+
+            <li><a href="/" class="active">Home</a></li>
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/services">Services</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Build Modern Websites
+                <span>Using Express.js</span>
+
+            </h1>
+
+            <p>
+
+                Create responsive, scalable and modern web applications
+                with Express.js, HTML, CSS and JavaScript.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="go('/services')">
+
+                    Explore Services
+
+                </button>
+
+                <button onclick="go('/contact')" class="secondary">
+
+                    Contact Us
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
