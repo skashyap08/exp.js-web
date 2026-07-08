@@ -19,3 +19,13 @@ backdrop-filter:blur(10px);
 position:sticky;
 top:0;
 }
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
