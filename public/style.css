@@ -65,3 +65,18 @@ gap:20px;
 flex-wrap:wrap;
 justify-content:center;
 }
+button{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+background:#0ea5e9;
+color:white;
+font-size:18px;
+transition:.4s;
+}
+
+button:hover{
+transform:translateY(-5px);
+background:#2563eb;
+}
