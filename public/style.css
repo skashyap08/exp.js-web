@@ -93,3 +93,13 @@ border-radius:20px;
 backdrop-filter:blur(10px);
 transition:.4s;
 }
+.card:hover{
+transform:translateY(-10px);
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,.2);
+margin-top:50px;
+}
