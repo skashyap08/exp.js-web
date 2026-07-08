@@ -103,3 +103,14 @@ padding:30px;
 background:rgba(0,0,0,.2);
 margin-top:50px;
 }
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
