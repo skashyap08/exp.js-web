@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(express.static(path.join(__dirname, "public")));
